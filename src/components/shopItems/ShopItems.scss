@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+
+.title--shopItems {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  p {
+    width: 35%;
+    max-width: 1216px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $dark-10;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title--shopItems {
+    p {
+      width: 90%;
+    }
+  }
+}

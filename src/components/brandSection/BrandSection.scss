@@ -1,0 +1,53 @@
+@import "../../variables.scss";
+
+.brand--section {
+  background-image: url("../../assets/image-michael-jordan.png");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .brand {
+    color: $white;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    min-width: 70%;
+  }
+
+  .about {
+    width: 50%;
+    min-width: 70%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    span {
+      font-size: 1.3rem;
+      font-weight: 400;
+      width: 43%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .brand--section {
+    .about {
+      span {
+        width: 100%;
+      }
+    }
+  }
+}

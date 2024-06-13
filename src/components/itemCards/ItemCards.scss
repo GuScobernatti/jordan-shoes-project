@@ -1,0 +1,66 @@
+@import "../../variables.scss";
+
+.productCards--section {
+  width: 70%;
+  min-height: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 50px auto;
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-container {
+      background-color: $dark-20;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+
+      img {
+        transition: transform 0.5s ease;
+      }
+    }
+
+    .infoProduct-container {
+      padding: 0 5px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+
+      p:first-child {
+        font-weight: 500;
+        font-size: 16px;
+        color: $dark-10;
+        height: 200px;
+      }
+
+      span {
+        color: $brand-color;
+        font-weight: 500;
+        font-size: 13px;
+      }
+
+      p:last-child {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        color: $dark-10;
+      }
+    }
+  }
+}
