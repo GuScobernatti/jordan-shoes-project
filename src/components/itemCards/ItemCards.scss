@@ -7,7 +7,6 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin: 50px auto;
-  background-color: aqua;
 
   .cards {
     display: flex;
@@ -15,7 +14,6 @@
     justify-content: center;
     cursor: pointer;
     transition: 0.4s;
-    background-color: antiquewhite;
 
     &:hover img {
       transform: scale(1.1);
